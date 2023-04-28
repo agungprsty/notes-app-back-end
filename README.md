@@ -1,13 +1,14 @@
-## Praktik Membuat Aplikasi Back-End Menggunakan NodeJS (Hapi Framework)
+## Notes App
+### Praktik Membuat Aplikasi Back-End Menggunakan NodeJS (Hapi Framework)
 
 > Untuk menggunakan postman collection and environment, harus menggunakan `newman`.
 
-### Jalankan server 
+### Run Server 
 ```bash
 npm run start-dev
 ```
 
-### Jalankan Postman Collection dengan Newman
+### Run Postman Collection dengan Newman
 ```bash
 newman run notes-api-test.postman_collection.json --environment notes-api-test.postman_environment.json
 ```
