@@ -20,9 +20,9 @@ const addNoteHandler = (req, h) => {
   if (isSuccess) {
     const response = h.response({
       status: 'success',
-      massage: 'Catatan berhasil ditambahkan',
+      message: 'Catatan berhasil ditambahkan',
       data: {
-        nodeId: id,
+        noteId: id,
       },
     });
     response.code(201);
@@ -59,7 +59,7 @@ const getNoteByIdHandler = (req, h) => {
 
   const response = h.response({
     status: 'fail',
-    massage: 'Not Found',
+    message: 'Catatan tidak ditemukan',
   });
   response.code(404);
   return response;
@@ -82,7 +82,7 @@ const updateNoteByIdHandler = (req, h) => {
 
     const response = h.response({
       status: 'success',
-      massage: 'Catatan berhasil diperbarui',
+      message: 'Catatan berhasil diperbarui',
     });
     response.code(200);
     return response;
@@ -104,7 +104,7 @@ const deleteNoteByIdHandler = (req, h) => {
     notes.splice(index, 1);
     const response = h.response({
       status: 'success',
-      massage: 'Catatan berhasil dihapus',
+      message: 'Catatan berhasil dihapus',
     });
     response.code(200);
     return response;
