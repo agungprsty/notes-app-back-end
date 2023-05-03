@@ -1,5 +1,5 @@
 ## Notes App
-### Praktik Membuat Aplikasi Back-End Menggunakan NodeJS (Hapi Framework)
+### Memodifikasi praktik Membuat Aplikasi Back-End Menggunakan NodeJS (Hapi Framework)
 
 > Untuk menggunakan postman collection and environment, harus menggunakan `newman`.
 
